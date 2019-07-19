@@ -1,0 +1,54 @@
+{% extends "pages/layouts/base.html" %}
+{% load static %}
+{% block body %}
+
+<title> Stanislav Katsyuk - {{ project.title }}</title>
+
+<h2>{{ project.title }}</h2>
+<div class="row">
+   <div class="col-md-8">
+      <img src="{% static project.image %}" alt="" class="center"
+   </div>
+   <div class="col-md-4">
+      <h3>About the project:</h3>
+      <p>{{ project.description }}</p>
+      <br>
+      <h3>Technology used:</h3>
+      <p>{{  project.technology }}</p>
+         <br>
+         <a href="https://github.com/StanKatsyuk/Projects/">Checkout the code on Github</a>
+   </div>
+</div>
+</div>
+<style>
+   .center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   }
+   h2 {
+   font: 40px Tahoma, Helvetica, Arial, Sans-Serif;
+   text-align: center;
+   }
+   body {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   }
+   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 700px) {
+   .row {
+   flex-direction: column;
+   }
+   }
+   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+   @media screen and (max-width: 400px) {
+   .navbar a {
+   float: none;
+   width: 100%;
+   }
+   h2{
+   font: 25px Tahoma, Helvetica, Arial, Sans-Serif;
+   }
+</style>
+{% endblock %}

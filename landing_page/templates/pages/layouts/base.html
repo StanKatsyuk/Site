@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+   <div class="content-wrapper">
+      <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+   </div>
+   <body>
+      <div class='nav-container'>
+         <a href="/contact"class="right" >Contact</a>
+         <a href="/projects" class="right">Recent Projects</a>
+         <a href="/" class="right">About</a>
+         <a href="https://github.com/StanKatsyuk">Github</a>
+         <a href="https://www.linkedin.com/in/stankatsyuk/">LinkedIn</a>
+      </div>
+      {% block body %}
+      {% endblock%}
+      <div class="footer">
+         <t1>Copyright ©2019 by Stanislav Katsyuk</t1>
+      </div>
+            <style>
+         * {
+         box-sizing: border-box;
+         }
+         .content-wrapper{
+         margin: auto;
+         min-width:200px;
+         max-width:100%;
+         }
+         .footer{
+         text-align: center;
+         min-width:100%;
+         max-width:100%;
+         padding: 1px;
+         text-align: center;
+         background: #333;
+         background-size: cover;
+         width: 100%;
+         position: fixed;
+         bottom: 0px;
+         }
+         .nav-container {
+         font-family: Arial, Helvetica, sans-serif;
+         height: auto;
+         overflow: hidden;
+         background-color: #333;
+         position: sticky;
+         position: -webkit-sticky;
+         top: 0;
+         line-height: 1.5;
+         z-index: 1;
+
+         }
+         .nav-container a {
+         float: left;
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 20px;
+         text-decoration: none;
+         }
+         /* Right-aligned link */
+         .nav-container a.right {
+         float: right;
+         }
+         /* Change color on hover */
+         .nav-container a:hover {
+         background-color: #ddd;
+         color: black;
+         }
+         /* Active/current link */
+         .nav-container a.active {
+         background-color: #666;
+         color: white;
+         }
+         /* Increase the font size of the heading */
+         .header h1 {
+         font-size: 50px;
+         color: #F5F5F5;
+         }
+         t1 {
+         font-family: Arial, Helvetica, sans-serif;
+         display: block;
+         color: #F5F5F5;
+         text-align: center;
+         padding: 4px 10px;
+         text-decoration: none;
+         }
+         @media screen and (max-width: 700px) {
+         .row {
+         flex-direction: column;
+         }
+         }
+         /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+         @media screen and (max-width: 400px) {
+         .nav-container a {
+         float: none;
+         width: 100%;
+         }
+         }
+      </style>
+   </body>
+</html>
+

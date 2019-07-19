@@ -1,0 +1,145 @@
+{% extends "pages/layouts/base.html" %}
+{% block body %}
+   <head>
+      <title> Stanislav Katsyuk - About </title>
+   </head>
+   <body>
+    <div class="content-wrapper">
+      <div class="row">
+         <div class="side">
+            <img src="https://i.imgur.com/PCugf2t.jpg" id="my_image" width="100%" min-width="100px" max_width="200px">
+         </div>
+         <div class="main" >
+            <div class="main_title">
+               <h3>About me:</h3>
+            </div>
+            <div class="main">
+               <p>My name is Stanislav but I go by Stan. I am an Automation Engineer based out of San Jose, California. I know it sounds cliché, but I love technology and how it can make our lives easier. If I can write some code to automate a time-consuming process I do repeatedly, then it’s worth doing. I believe in the quality of user experience and prioritize place emphasis on that when developing test automation. I also understand that release schedules should be strictly honored and respect the agile process.</p><br>
+               <p>
+                  My areas of expertise include developing test automation for firmware, software, Linux administration, debugging and triaging hardware/software issues as well as investigating and testing patches for known bugs. I mainly write code in Python but have had experience with Java and C++.
+               </p><br>
+               <p>
+                  Take a look at some of <a href="/projects"> my recent projects here</a> and feel free to reach out if you would like. You can also <a href="https://drive.google.com/file/d/0B1hsDHZzV05AU3lEeVBfWG5CNXRzbDllTEw4akU4dmpFWHFN/view?usp=sharing" download> download my resume here.</a>
+               </p><br>
+            </div>
+            <div class="awards">
+               <div class="row">
+                  <div class="award_card">
+                     <ul class="list-group list-group-flush">
+                        <h3>
+                           <div class "list_title" >Specialties</div></h3><br>
+                        </h3>
+                        <li class="list-group-item">Test Automation Framework Development</li>
+                        <li class="list-group-item">Software Quality Assurance</li>
+                        <li class="list-group-item">Embedded Linux System Support</li>
+                        <li class="list-group-item">Python/Bash Scripting</li>
+                        <li class="list-group-item">Bug Triage/ Root Cause Analyis</li>
+                        <li class="list-group-item">Global Operations Management</li>
+                        <li class="list-group-item">Cross-functional Team Leadership</li>
+                        <li class="list-group-item">Total Quality Management</li>
+                        <li class="list-group-item">NPI/Training</li>
+                     </ul><br>
+                  </div>
+                  <div class="award_card">
+                     <ul class="list-group list-group-flush">
+                        <h3>
+                           <div class "list_title">Certifications and Awards</div>
+                        </h3><br>
+                        <li class="list-group-item">BS, Global Operations Management - San Jose State University</li>
+                        <li class="list-group-item">Certified Pro User - SumoLogic</li>
+                        <li class="list-group-item">Complete Python Bootcamp - Udemy</li>
+                        <li class="list-group-item">Employee of the Quarter - Brava</li>
+                     </ul><br>
+                  </div>
+                  <div class="award_card">
+                     <ul class="list-group list-group-flush">
+                        <h3>
+                           <div class "list_title">Hobbies</div>
+                        </h3><br>
+                        <li class="list-group-item">Completing a (personal) Python project on a weekly basis</li>
+                        <li class="list-group-item">Microprocessor Programming</li>
+                        <li class="list-group-item">Embedded Linux System Development</li>
+                        <li class="list-group-item">Trend Analysis/ Data Science</li>
+                        <li class="list-group-item">Travel</li>
+                        <li class="list-group-item">Photography</li>
+                        <li class="list-group-item">Working on/Driving my 1971 BMW 2002</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+<style>
+   * {
+   box-sizing: border-box;
+   margin: 0px;
+   }
+   /* Style the body */
+   body {
+   font-family: Arial, Helvetica, sans-serif;
+   }
+   h3{
+   border-bottom: 1px solid black;
+   }
+   /* Column container */
+   .row {
+   display: -ms-flexbox;
+   /* IE10 */
+   display: flex;
+   -ms-flex-wrap: wrap;
+   /* IE10 */
+   overflow: auto;
+   }
+   /* Create two unequal columns that sits next to each other */
+   /* Sidebar/left column */
+   .side {
+   -ms-flex: 30%;
+   height: 100%;
+   /* IE10 */
+   flex: 30%;
+   background-color: #f1f1f1;
+   padding: 20px;
+   }
+   /* Main column */
+   .main {
+   -ms-flex: 70%;
+   /* IE10 */
+   flex: 70%;
+   background-color: white;
+   padding: 20px;
+   margin: 10px;
+   line-height: 22px;
+
+   }
+   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 700px) {
+   .row {
+   flex-direction: column;
+   }
+   }
+   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+   @media screen and (max-width: 350px) {
+   .navbar a {
+   float: none;
+   width: 100%;
+   }
+   .awards{
+   display: flex;
+   flex-direction: column;
+   width: 10px;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   grid-row-gap: 50px;
+   }
+   .award_card{
+   width: 18rem;
+   }
+   /* Increase the font size of the heading */
+   .header h1 {
+   font-size: 40px;
+   color: white;
+   }
+</style>
+{% endblock %}

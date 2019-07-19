@@ -1,0 +1,56 @@
+{% extends "pages/layouts/base.html" %}
+{% block body %}
+<html>
+   <head>
+        <title>Stanislav Katsyuk - Contact</title>
+   </head>
+   <body>
+    <div class="body_container">
+      <img id="mepic" src="http://i.imgur.com/XzBL4EPl.png" alt="my_picture">
+      <div class ="contact_text">
+         <em style="font-size:26px; font-weight:400;"><strong>Stanislav "Stan" Katsyuk</strong></em>
+         <br/>
+         <em style="font-size:26px; font-weight:400;">Automation Engineer</em>
+         <br/>
+         <td height="58" style="color:#4d4d4e; font-size: 18pt;">
+            San Jose, California
+         </td>
+         <br/>
+         <td class="hover" height="60" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#4875B4; font-size: 20pt; line-height: 1.5;">
+            <a href="mailto:skats@gmail.com" onMouseOver="this.style.color='#d0292d'" onMouseOut="this.style.color='#4875B4'" style="color:#4875B4; ">stankatsyuk@gmail.com</a>
+            <br>
+            <a href="https://github.com/StanKatsyuk" onMouseOver="this.style.color='#d0292d'" onMouseOut="this.style.color='#4078c0'" target="_blank" style="color:#4875B4;">Github</a>
+            <br>
+            <a href="https://www.linkedin.com/in/stankatsyuk" onMouseOver="this.style.color='#d0292d'" onMouseOut="this.style.color='#4875B4'" target="_blank" style="color:#4875B4;">LinkedIn</a>
+         </td>
+      </div>
+  </div>
+   </body>
+</html>
+<style>
+   body{
+   padding:0;
+   margin:0px;
+   text-align:center;
+   padding-bottom: 50px;
+   }
+   .body_container{
+     margin-top: 100px;
+   }
+   header {
+   padding: 25px;
+   background: url('https://lh3.googleusercontent.com/A3dTA30yg1wGCeRsrk5caFft2fzfnLIEPx9T4MOGuoJTo4xLSkmJL5RSky_on-dk84Cq2w4BYgrPwfX6ZlF1_ayWE_mHtFVkYkLvnpBA-nU8dLxf7oG-kPsmI_qVolIfIAJ7tD5XPCFS3bK37dVH29TiIjIZOY55LUPsW9Q3oqDFg8OWvRdoIXBxVMEoxF9cTv6UcJC7c-XS-AB2htiaIPtDI2GrAtU0K2cGnZDlYL9MDuThI24H6I_UyM07lT6sGmwwGPf3lYpIj_gH9eUu6a4VEVZC02GmCioUHhpbu0CUCg_xj1Bt0DnWntP8H_s953mv-LgUkbYCeOLVDag-5qk_tQp2S6i6p4dzZ0Bbdskqlf98lEB2QYTy0-iCV9Y3uwajOc3uI9thlNSGIILK450qqL71HwptSKmsaeS96usWaICP3_MBfk2_YYLTvv4pE7FQ-L3VV4sS0mDbVkWGi_ZX_XT5wNxUswwNcAnxRLSj29xKcO6ze_GLG-vNO8NpACU2l47KfrlBdeW9oaIu3KbNBeVQR45KN5PU9R27viP9dkuOuZyym2N8cUFaqpUSjQ1iltIgpwYEvEIe-ltbWYCxnzDhSC5PoR4Q9UJ44OFRaY-YUGMr29-EDENu1yx85jh1QJYCaVHrITIvhGkeXalUl1iHOKA=w3840-h1020-no');
+   }
+   img#mepic {
+   margin: 25px;
+   width: 25%;
+   height: 25%;
+   border-radius: 50%;
+   }
+   .contact_text {
+   display: block;
+   font-family: Helvetica, Arial, sans-serif;
+   padding-bottom: 70px;
+   }
+</style>
+{% endblock %}
