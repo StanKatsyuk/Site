@@ -23,7 +23,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 #STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
 STATIC_URL = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
@@ -45,7 +44,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['stankatsyukapp.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['myherokuappname', 'localhost']
 
 
 # Application definition
@@ -100,7 +99,7 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'projects',
+        'NAME': 'projectsDB',
         'USER': 'postgres',
         'PASSWORD': os.environ.get('POSTGRES_PASS'),
         'HOST': '127.0.0.1',
